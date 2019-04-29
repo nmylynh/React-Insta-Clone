@@ -1,0 +1,33 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.logo-title {
+    display: flex;
+}
+
+h1 {
+    align-self: center;
+    font-family: 'billabongregular';
+}
+
+.fab {
+    font-size: 2rem;
+    align-self: center;
+}
+
+input {
+    height: 25%;
+    border-radius: 3px;
+    border: 1px solid silver;
+    padding: 5px;
+    text-align: center;
+}
+
+.far {
+    font-size: 25px;
+    color: gray;
+}
