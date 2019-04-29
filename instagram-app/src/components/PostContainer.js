@@ -1,5 +1,6 @@
 import React from 'react';
 import "./PostContainer.css";
+import CommentSection from "./CommentSection";
 
 function PostContainer(props){
     return props.dummyData.map(renderPost)
@@ -18,6 +19,13 @@ function renderPost(props, index){
                     <i className="far fa-heart"></i>
                     <i className="far fa-comment"></i>
                 </div>
+                <p>{props.likes} likes</p>
+
+
+                <CommentSection
+                comments={props.comments}
+                />
+
             </div>
         )
 }

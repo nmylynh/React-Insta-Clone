@@ -1,0 +1,12 @@
+.comment-section {
+    display: flex;
+}
+
+.comment-user-name {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.comment-content {
+    list-style-type: none;
+}
