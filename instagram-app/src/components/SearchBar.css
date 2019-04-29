@@ -14,12 +14,21 @@ h1 {
     font-family: 'billabongregular';
 }
 
+h1::before {
+    content: "";
+    height: 50px;
+    width: 1px;
+    border-left: 1px solid gray;
+    padding-right: 15px;
+}
+
 .fab {
     font-size: 2rem;
     align-self: center;
+    padding: 15px;
 }
 
-input {
+.input {
     height: 25%;
     border-radius: 3px;
     border: 1px solid silver;
@@ -27,7 +36,13 @@ input {
     text-align: center;
 }
 
-.far {
-    font-size: 25px;
+.header-icons {
     color: gray;
 }
+
+.far {
+    font-size: 25px;
+    padding: 10px;
+}
+
+
