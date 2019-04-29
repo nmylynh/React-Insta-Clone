@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import "./PostContainer.css";
 import CommentSection from "./CommentSection";
 
@@ -19,15 +20,24 @@ function renderPost(props, index){
                     <i className="far fa-heart"></i>
                     <i className="far fa-comment"></i>
                 </div>
-                <p>{props.likes} likes</p>
+                <p className="likes">{props.likes} likes</p>
 
 
                 <CommentSection
                 comments={props.comments}
+                timestamp={props.timestamp}
                 />
 
             </div>
         )
+}
+
+PostContainer.propTypes = {
+    username: PropTypes.string,
+    thumbnailUrl: PropTypes.string,
+    imageUrl: PropTypes.string,
+    likes: PropTypes.number,
+    timestamp: PropTypes.string
 }
 
 export default PostContainer;
