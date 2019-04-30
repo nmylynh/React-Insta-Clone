@@ -1,0 +1,33 @@
+.comment-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    padding: 5px;
+}
+
+.comment-user-name {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.comment-content {
+    list-style-type: none;
+}
+
+.timestamp {
+    color: silver;
+    padding: 10px;
+}
+
+.add-comment {
+    width: 100%;
+    height: 75px;
+    border: none;
+}
+
+hr {
+    color: silver;
+    width: 100%;
+}
