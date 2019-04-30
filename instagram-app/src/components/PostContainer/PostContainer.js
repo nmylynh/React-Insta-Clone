@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types"
 import "./PostContainer.css";
 import CommentSection from "../CommentSection/CommentSection";
 
@@ -25,5 +26,15 @@ function PostContainer(props, index){
             </div>
         )
 }
+
+PostContainer.propTypes = {
+    username: PropTypes.string,
+    thumbnailUrl: PropTypes.string,
+    imageUrl: PropTypes.string,
+    likes: PropTypes.number,
+    timestamp: PropTypes.string
+}
+
+
 
 export default PostContainer;
