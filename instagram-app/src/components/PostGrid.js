@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import "./PostContainer.css";
 import CommentSection from "./CommentSection";
 
-function PostContainer(props){
-    return props.dummyData.map(renderPost)
+export default function PostGrid(props){
+    return props.posts.map(renderPost)
 }
 
 
@@ -32,12 +32,10 @@ function renderPost(props, index){
         )
 }
 
-PostContainer.propTypes = {
+PostGrid.propTypes = {
     username: PropTypes.string,
     thumbnailUrl: PropTypes.string,
     imageUrl: PropTypes.string,
     likes: PropTypes.number,
     timestamp: PropTypes.string
 }
-
-export default PostContainer;

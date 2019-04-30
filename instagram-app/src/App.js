@@ -2,15 +2,10 @@ import React from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import dummyData from '../src/dummy-data';
-import PostContainer from './components/PostContainer';
+import PostGrid from './components/PostGrid';
 
 class App extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      dummyData: dummyData
-    }
-  }
+  state = dummyData
 
   render(){
   return (
@@ -18,9 +13,7 @@ class App extends React.Component {
 
       <SearchBar />
 
-      <PostContainer 
-      dummyData = {this.state.dummyData}
-      />
+      <PostGrid posts = {this.state} />
 
     </div>
   );
