@@ -4,11 +4,11 @@ import "./PostContainer.css";
 import CommentSection from "./CommentSection";
 
 export default function PostGrid(props){
-    return props.posts.map(renderPost)
+    return props.posts.map(renderPostContainer)
 }
 
 
-function renderPost(props, index){
+function renderPostContainer(props, index){
     return (
             <div key={index} className="card">
                 <div className="post-header">
