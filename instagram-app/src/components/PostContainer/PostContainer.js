@@ -18,10 +18,7 @@ function PostContainer(props, index){
                 <p className="likes">{props.likes} likes</p>
 
 
-                <CommentSection
-                comments={props.comments}
-                timestamp={props.timestamp}
-                />
+                <CommentSection comments={props.comments} />
 
             </div>
         )

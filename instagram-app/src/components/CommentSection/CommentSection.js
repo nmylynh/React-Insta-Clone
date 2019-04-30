@@ -2,14 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./CommentSection.css"
 
-function CommentSection(props){
+function CommentSection(props) {
     return ( 
             <div className="comment-section"> 
                 {props.comments.map(renderComment)} 
-                <span className="timestamp">{props.timestamp}</span>
+                <span className="timestamp">{props.timestamp || Date.now()}</span> {/* I removed timestamp prop, so Date.now is temporary default */}
                 <hr/>
                 <input className="add-comment" placeholder="Add a comment..." />
-            </div> )
+            </div> 
+        )
 }
 
 function renderComment(props, index){
