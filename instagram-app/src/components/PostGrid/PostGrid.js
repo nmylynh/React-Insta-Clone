@@ -1,7 +1,6 @@
-import React from 'react';
-import PropTypes from "prop-types";
-import "./PostContainer.css";
-import CommentSection from "../CommentSection/CommentSection";
+import React from 'react'
+import PropTypes from "prop-types"
+import "./PostContainer.css"
 import PostContainer from "../PostContainer/PostContainer"
 
 export default function PostGrid(props){
