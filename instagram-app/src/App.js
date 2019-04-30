@@ -20,6 +20,7 @@ export default class App extends React.Component {
         <SearchBar />
 
         <PostGrid posts = {this.state.posts} />
+
       </div>
     )
   }
