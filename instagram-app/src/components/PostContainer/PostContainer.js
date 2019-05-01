@@ -18,7 +18,7 @@ function PostContainer(props, index){
                 <p className="likes">{props.likes} likes</p>
 
 
-                <CommentSection comments={props.comments} />
+                <CommentSection username={props.username} comments={props.comments} />
 
             </div>
         )
